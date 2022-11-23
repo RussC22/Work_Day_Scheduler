@@ -11,20 +11,30 @@ var rowTimeBlockFuture = $('future');
 var timeSec= dayjs().format('H:mm:ss');
 var timeDay= dayjs().format('MM/DD/YYYY');
 $('#currentDay').textContent=timeDay + " " + timeSec
-
+// save button variable
 var buttonEl = $('save');
 
-$(function () {
 
+// current time
+
+const d = new Date();
+let hour = d.getHours();
+  console.log(hour)
+
+
+// if this condition is met it is in the past, present, or
+
+$('.time-block').each(function () { 
+  var currentHour = parseInt( $(this).attr('id'));
+
+    if (currentHour < hour ) {$(this).addClass('past');}
+    if (currentHour > hour ) {$(this).addClass('future');}
+    if (currentHour === hour ) {$(this).addClass('present');}
+});
+  
 
   // TODO: Add a listener for click events on the save button. This code should use the id in the containing time-block as a key to save the user input in local storage. HINT: What does `this` reference in the click listener function? 
   
-  
-  
-  // How can DOM traversal be used to get the "hour-x" id of the time-block containing the button that was clicked? 
-  
-  
-  // How might the id be useful when saving the description in local storage?
   
 
 
@@ -39,7 +49,7 @@ $(function () {
   // TODO: Add code to display the current date in the header of the page.
 
 
-});
+// });
 function saveToLs(event) {  
   // console.dir (this)
   var value= $(this).siblings('.description').val()
