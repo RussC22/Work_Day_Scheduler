@@ -16,6 +16,10 @@ This weeks activity centers around creating a simple calendar application that a
 - googleFont
 - day.js.org
 
+## Image
+
+[workDaySchedulerPic.pdf](https://github.com/RussC22/Work_Day_Scheduler/files/10089652/workDaySchedulerPic.pdf)
+
 ## Usage
 
 This is a everyday application that can organized the most complicated individuals schedule.
