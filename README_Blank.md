@@ -17,8 +17,7 @@ This weeks activity centers around creating a simple calendar application that a
 - day.js.org
 
 ## Image
-
-[workDaySchedulerPic.pdf](https://github.com/RussC22/Work_Day_Scheduler/files/10089652/workDaySchedulerPic.pdf)
+![WorkdayScheduler](https://user-images.githubusercontent.com/114961971/203929756-f4078c75-1344-4fb4-8792-cd4d0e9f38c9.png)
 
 ## Usage
 
